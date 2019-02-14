@@ -12,11 +12,11 @@
 ** Constructor that takes in 5 Players and assigns them to a position based on order of inputs.
 ********************************************************************************************************/
 Team::Team(Player pgIn, Player sgIn, Player sfIn, Player pfIn, Player cIn) {
-	pointGuard = pgIn;
-	shootingGuard = sgIn;
-	smallForward = sfIn;
-	powerForward = pfIn;
-	center = cIn;
+	setPointGuard(pgIn);
+	setShootingGuard(sgIn);
+	setSmallForward(sfIn);
+	setPowerForward(pfIn);
+	setCenter(cIn);
 }
 
 /********************************************************************************************************
@@ -29,8 +29,8 @@ void Team::setPointGuard(Player pIn) {
 /********************************************************************************************************
 ** getPointGuard returns the name of the player that is the point guard position on the team.
 ********************************************************************************************************/
-std::string Team::getPointGuard() {
-	std::string pg = pointGuard.getName();
+Player Team::getPointGuard() {
+	Player pg = pointGuard;
 	return pg;
 }
 
@@ -44,8 +44,8 @@ void Team::setShootingGuard(Player pIn) {
 /********************************************************************************************************
 ** getShootingGuard returns the name of the player that is the shooting guard position on the team.
 ********************************************************************************************************/
-std::string Team::getShootingGuard() {
-	std::string sg = shootingGuard.getName();
+Player Team::getShootingGuard() {
+	Player sg = shootingGuard;
 	return sg;
 }
 
@@ -59,8 +59,8 @@ void Team::setSmallForward(Player pIn) {
 /********************************************************************************************************
 ** getSmallForward returns the name of the player that is the small forward position on the team.
 ********************************************************************************************************/
-std::string Team::getSmallForward() {
-	std::string sf = smallForward.getName();
+Player Team::getSmallForward() {
+	Player sf = smallForward;
 	return sf;
 }
 
@@ -74,8 +74,8 @@ void Team::setPowerForward(Player pIn) {
 /********************************************************************************************************
 ** getPowerForward returns the name of the player that is the power forward position on the team.
 ********************************************************************************************************/
-std::string Team::getPowerForward() {
-	std::string pf = powerForward.getName();
+Player Team::getPowerForward() {
+	Player pf = powerForward;
 	return pf;
 }
 
@@ -87,10 +87,10 @@ void Team::setCenter(Player pIn) {
 }
 
 /********************************************************************************************************
-** getCenter returns the name of the player that is the center position on the team.
+** getCenter returns the player that is the center position on the team.
 ********************************************************************************************************/
-std::string Team::getCenter() {
-	std::string c = center.getName();
+Player Team::getCenter() {
+	Player c = center;
 	return c;
 }
 

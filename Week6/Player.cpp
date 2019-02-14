@@ -69,7 +69,7 @@ int Player::getRebounds() {
 /********************************************************************************************************
 ** setAssists method takes in an int parameter and updates the players assists total.
 ********************************************************************************************************/
-void Player::setRebounds(int assistsIn) {
+void Player::setAssists(int assistsIn) {
 	assists = assistsIn;
 }
 

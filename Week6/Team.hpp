@@ -10,7 +10,7 @@
 #ifndef TEAM_HPP
 #define TEAM_HPP
 
-#include "Player.hpp";
+#include "Player.hpp"
 #include <string>
 
 class Team {
@@ -23,15 +23,15 @@ class Team {
 	public:
 		Team(Player, Player, Player, Player, Player);
 		void setPointGuard(Player);
-		std::string getPointGuard();
+		Player getPointGuard();
 		void setShootingGuard(Player);
-		std::string getShootingGuard();
+		Player getShootingGuard();
 		void setSmallForward(Player);
-		std::string getSmallForward();
+		Player getSmallForward();
 		void setPowerForward(Player);
-		std::string getPowerForward();
+		Player getPowerForward();
 		void setCenter(Player);
-		std::string getCenter();
+		Player getCenter();
 		int totalPoints();
 };
 #endif
