@@ -14,7 +14,7 @@ double findMedian(int nums[], int length) {
 	int m2 = length / 2 - 1;
 
 	if (length % 2 == 0) {
-		median = (nums[m1] + nums[m2]) / 2;
+		median = (nums[m1] + nums[m2]) / 2.0;
 	}
 	else {
 		median = nums[m1];
