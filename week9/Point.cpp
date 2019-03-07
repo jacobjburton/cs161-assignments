@@ -9,6 +9,7 @@
 ********************************************************************************************/
 
 #include "Point.hpp"
+#include <math.h>
 
 // Default constructor initializes x and y coordinates to 0.0
 Point::Point() {
@@ -41,4 +42,9 @@ void Point::setYCoord(double yIn) {
 // Get method for y coordinate.  Returns Point's y coordinate.
 double Point::getYCoord() {
 	return yCoord;
+}
+
+// Method for calculating distance between two Points.
+double Point::distanceTo(Point pIn) {
+	return sqrt(pow(pIn.getXCoord() - getXCoord(), 2) + pow(pIn.getYCoord() - getYCoord(), 2));
 }
