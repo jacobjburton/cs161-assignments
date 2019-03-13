@@ -29,7 +29,8 @@ SBoard::SBoard() {
 	std::memcpy(&board[0][0], &temp[0][0], sizeof board);
 	tokensPlaced = 0;
 }
-wnumber of tokens placed so far
+
+// Method returns the number of tokens placed so far
 int SBoard::getNumTokens() {
 	return tokensPlaced;
 }
